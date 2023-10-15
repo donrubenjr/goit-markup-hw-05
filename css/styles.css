@@ -110,6 +110,18 @@ svg {
   list-style-type: none;
 }
 
+.header-menu-link::after {
+  content: "";
+  border-radius: 2px;
+  background-color: var(--OCEAN);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: width 205ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Contacts Section */
 .div-contact-menu {
   display: flex;
